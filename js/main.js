@@ -49,7 +49,6 @@ let states = {
 document.getElementById("stateSelector").disabled = true;
 document.getElementById("citySelector").disabled = true;
 
-
 // function to get selected country value
 function selectCountry() {
 
@@ -89,12 +88,10 @@ function selectState() {
     let selectedState = document.getElementById("stateSelector").value;
     document.getElementById("displayState").textContent = selectedState;
 
+    // if user select different state then remove all previous options of previous selected state
     let cityNodeCheck = document.getElementById("citySelector");
-
     if (cityNodeCheck.childElementCount > 1) {
-        while (cityNodeCheck.hasChildNodes()) {
-            cityNodeCheck.removeChild(cityNodeCheck.lastChild);
-        }
+        cityNodeCheck.length = 0;
 
         let opt = document.createElement("option");
         opt.value = "default";
