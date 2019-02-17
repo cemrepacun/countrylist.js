@@ -19,6 +19,10 @@ h1 {
     margin: 10px;
 }
 
+.subtitle {
+    margin: 10px;   
+}
+
 .selector {
     min-width: 200px;
     padding: 10px;

@@ -95,6 +95,7 @@ function selectState() {
 
         let opt = document.createElement("option");
         opt.value = "default";
+        opt.disabled = true;
         opt.textContent =  "Select City";
         cityNodeCheck.appendChild(opt);
         
