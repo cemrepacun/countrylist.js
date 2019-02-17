@@ -95,6 +95,7 @@ function selectState() {
 
         let opt = document.createElement("option");
         opt.value = "default";
+        opt.selected = true;
         opt.disabled = true;
         opt.textContent =  "Select City";
         cityNodeCheck.appendChild(opt);
@@ -114,11 +115,12 @@ function selectState() {
 // function to generate list of all cities of a particular state
 function generateCity(selectedState) {
     let cityList = document.getElementById("citySelector");
-
+    
     // dynamically creating options for the selected city select box
     for (let i = 0; i < Object.keys(states).length; i++) {
         if (selectedState == Object.keys(states)[i]) {
             for (let j = 0; j < states[selectedState].length; j++) {
+                
                 let opt = document.createElement("option");
                 opt.value = states[selectedState][j];
                 opt.textContent = states[selectedState][j];
