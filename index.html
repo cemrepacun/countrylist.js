@@ -11,14 +11,15 @@
 
     <h1>citylist.js - Country, State & City Selector</h1>
     
-    <div class="subtitle">A opensource JS library to implement Indian State & City dropdown list.</div>
+    <div class="subtitle">A opensource JS library to implement Indian State & City dropdown list.
+        <a href="https://github.com/nitin9nair/snackbar.js" target="_blank">Fork on GitHub</a>
+    </div>
 
     <div class="container">
 
         <!-- Country Selector    -->
         <select id="countrySelector" class="selector" onchange="selectCountry()">
             <option value="default" disabled selected>Select Country</option>
-            <option value="India">India</option>
         </select>
 
 
@@ -31,6 +32,8 @@
         <select id="citySelector" class="selector" onchange="selectCity()">
             <option value="default" disabled selected>Select City</option>
         </select>
+        
+        <div class="displayList">*Please select country 'India' from above dropdown to view its states and cities. </div>
         
         <div class="subtitle">Displaying selected value from dropdown list:</div>
         
