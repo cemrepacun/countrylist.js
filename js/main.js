@@ -1,4 +1,7 @@
-
+// GitHub repo - 'countrylist.js'
+// Author - Nitin Nair
+// Repo URL - https://github.com/nitin9nair/countrylist.js
+// Date Created - 20/Feb/2019 
 
 let countrySelector = document.getElementById('countrySelector');
 let stateSelector = document.getElementById('stateSelector');
@@ -158,4 +161,22 @@ function generateCities(selectedState) {
 function selectCity() {
     let citySelected = document.getElementById('citySelector').value;
     displayCity.textContent = citySelected;
+}
+
+function resetDropdown() {
+
+    countrySelector.selectedIndex = 0;
+    displayCountry.textContent = null;
+
+    stateSelector.selectedIndex = 0;
+    stateSelector.length = 1;
+    stateSelector.disabled = true;
+    displayState.textContent = null;
+
+    citySelector.selectedIndex = 0;
+    citySelector.length = 1;
+    citySelector.disabled = true;
+    displayCity.textContent = null;
+
+
 }

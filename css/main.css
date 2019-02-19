@@ -1,4 +1,9 @@
-/* CityList.js css */
+/* 
+GitHub repo - 'countrylist.js'
+Author - Nitin Nair
+Repo URL - https://github.com/nitin9nair/countrylist.js
+Date Created - 20/Feb/2019 
+*/
 * {
     box-sizing: border-box;
 }
@@ -27,8 +32,24 @@ div {
     margin: 10px;   
 }
 
+.btn {
+    min-width: 100px;
+    padding: 10px;
+    background: #008a00;
+    color: #fff;
+    border: 1px solid #008a00;
+    border-radius: 3px;
+    font-family: Titillium Web;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: darkgreen;
+}
+
 .selector {
-    min-width: 200px;
+    min-width: 300px;
     padding: 10px;
     display: inline-block;
     margin: 10px;

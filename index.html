@@ -1,8 +1,14 @@
+<!-- 
+GitHub repo - 'countrylist.js'
+Author - Nitin Nair
+Repo URL - https://github.com/nitin9nair/countrylist.js
+Date Created - 20/Feb/2019 
+ -->
 <!DOCType>
 <html>
 
 <head>
-    <title>citylist.js</title>
+    <title>countrylist.js - Country, State & City Selector</title>
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -25,7 +31,7 @@
 
         <!-- State Selector    -->
         <select id="stateSelector" class="selector" onchange="selectState()">
-            <option value="default" disabled selected>Select State/UT</option>
+            <option value="default" disabled selected>Select State</option>
         </select>
 
         <!-- City Selector    -->
@@ -34,6 +40,10 @@
         </select>
         
         <div class="displayList">*Please select any country from above dropdown to view its states and cities. </div>
+
+        <div class="displayList">
+            <button class="btn" onclick="resetDropdown()">RESET ALL DROPDOWN</button>
+        </div>
         
         <div class="subtitle">Displaying selected value from dropdown list:</div>
         
@@ -44,8 +54,15 @@
             <div>Selected City: <span id="displayCity"></span></div>
         </div>
 
+        <div class="displayList">*List of Countries, States and Cities maybe incorrect for some values, please raise a issue on GitHub 
+            for fixation.
+        </div>
+
+        <div class="displayList">Made with <span style="color:red;">&#10084;</span> in India</div>
+
     </div>
 
+    <!-- script containing list of all countries with respective state and cities of the world -->
     <script src="js/countrylist.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </body>
