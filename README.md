@@ -1,5 +1,5 @@
 # countrylist.js
-A pure JS drop down select list for Indian States and Cities.
+A pure JS dropdown selector for all Countries, States and Cities of the world.
 
 Please visit https://nitin9nair.github.io/countrylist.js/index.html to learn on how to use this awesome library.
 
